@@ -1,0 +1,89 @@
+.card-feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card {
+  width: 30%;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  }
+  
+  .user-dp {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  }
+  
+  .username {
+  font-size: 14px;
+  font-weight: bold;
+  }
+  
+  .card-image {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  }
+  
+  .card-content {
+  padding: 10px;
+  }
+  
+  .card-text {
+  margin-bottom: 10px;
+  }
+  
+  .card-actions {
+  display: flex;
+  justify-content: space-evenly;
+  }
+  
+  .card-actions i {
+  margin-left: 10px;
+  color: gray;
+  cursor: pointer;
+  }
+
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .username {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .verified {
+    color: #1da1f2;
+    font-size: 12px;
+    margin: 15px;
+  }
+  
+  .date {
+    font-size: 12px;
+    color: gray;
+  }
+
+  .tweet-content {
+    padding: 0px;
+    background-color: #f9f9f9;
+  }
+  
+  .tweet-text {
+    margin-bottom: 10px;
+  }
