@@ -57,10 +57,7 @@
   cursor: pointer;
   }
 
-  .user-info {
-    display: flex;
-    align-items: center;
-  }
+ 
   
   .username {
     font-size: 14px;
@@ -87,3 +84,28 @@
   .tweet-text {
     margin-bottom: 10px;
   }
+
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-details {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+  
+  .username {
+    margin-right: 5px;
+  }
+  
+  .ellipsis-container {
+    margin-left: auto;
+  }
+  
+  .ellipsis-icon {
+    color: gray;
+    cursor: pointer;
+  }
+  
