@@ -109,3 +109,44 @@
     cursor: pointer;
   }
   
+
+  
+  .header {
+  
+
+   
+  
+
+   
+    display: flex;
+    margin-left: 35%;
+    margin-bottom: 1%;
+
+    
+
+    
+  }
+  
+  .header-left {
+    float: left;
+    margin-right: 10%;
+  }
+  
+  .bookmarks {
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  
+  .header-right {
+    float: right;
+    margin-left: 250px;
+    /* display: flex;
+    align-items: center; */
+  }
+  
+  .fa-icon {
+    color: gray;
+    cursor: pointer;
+  }
+  
