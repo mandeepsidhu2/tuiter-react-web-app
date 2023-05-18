@@ -1,0 +1,14 @@
+@media (max-width: 1200px) {
+    .icon-text {
+      display: none;
+    }
+    .row-cust{
+        width: 50%;
+    }
+  
+  }
+  @media (max-width: 768px) {
+    .wd-extra-tab{
+        display: none;
+    }
+  }
