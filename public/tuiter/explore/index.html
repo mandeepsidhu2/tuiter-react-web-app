@@ -12,59 +12,100 @@
 <body>
   <div class="container-fluid">
     <div class="row">
+
       <div class="col-lg-3">
-        <nav class="sidebar">
-          <ul class="nav flex-column">
-            <!-- Navigation Links -->
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">
-                <i class="fas fa-search"></i>
-                Explore
-              </a>
-            </li>
-            <!-- Reuse links from navigation.html -->
-            <li class="nav-item">
-              <a class="nav-link" href="home.html">
-                <i class="fas fa-home"></i>
-                Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="notifications.html">
-                <i class="fas fa-bell"></i>
-                Notifications
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="messages.html">
-                <i class="fas fa-envelope"></i>
-                Messages
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <button class="btn btn-primary rounded-pill mt-4">Tuit</button>
+  <div class="sidebar">
+    <table class="table table-bordered">
+        <tbody>
+          <tr>
+            <td style="padding-left: 20px;">
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding-left: 20px;">
+              <i class="fas fa-home"></i>
+              Home
+            </td>
+          </tr>
+          <tr>
+            <td style="padding-left: 20px;">
+              <i class="fas fa-search"></i>
+              Explore
+            </td>
+          </tr>
+          <tr>
+            <td style="padding-left: 20px;">
+              <i class="fas fa-bell"></i>
+              Notifications
+            </td>
+          </tr>
+          <tr>
+            <td style="padding-left: 20px;">
+              <i class="fas fa-envelope"></i>
+              Messages
+            </td>
+          </tr>
+          <tr>
+            <td style="padding-left: 20px;">
+              <i class="fas fa-bookmark"></i>
+              Bookmarks
+            </td>
+          </tr>
+          <tr>
+            <td style="padding-left: 20px;">
+              <i class="fas fa-list"></i>
+              Lists
+            </td>
+          </tr>
+          <tr>
+            <td style="padding-left: 20px;">
+              <i class="fas fa-user"></i>
+              Profile
+            </td>
+          </tr>
+          <tr>
+            <td style="padding-left: 20px;">
+              <i class="fas fa-ellipsis-h"></i>
+              More
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+    <div class="col-lg-12">
+        <div class="sidebar">
+          <button class="btn btn-primary btn-lg rounded-pill w-100">Tuit</button>
+        </div>
       </div>
+  </div>
+</div>
+
       
       <div class="col-lg-6">
         
         <div class="container">
             <div class="row">
-                <div class="col-md-12 mt-5">
-                  <div class="input-group">
-                    <input class="form-control py-2 rounded-pill pr-5" type="search" value="search" id="example-search-input">
-                    <div class="input-group-append">
-                      <button class="btn rounded-pill border-0 ml-n5" type="button">
-                        <i class="fa fa-search"></i>
-                      </button>
-                    </div>
+              <div class="col-md-12 mt-5">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <button class="btn rounded-pill border-0 mr-n5" type="button">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </div>
+                  <input class="form-control rounded-pill pr-2 pl-5" type="search" value="search" id="example-search-input">
+                  <div class="input-group-append">
+                    <button class="btn rounded-pill ml-2" type="button">
+                      <i class="fa fa-cog"></i>
+                    </button>
                   </div>
                 </div>
               </div>
-              
-              
-        
-        </div>
+            </div>
+          </div>
+          
+          
+          
           
           
         <ul class="nav nav-tabs mt-4">
@@ -84,113 +125,158 @@
             <a class="nav-link" href="#">Entertainment</a>
           </li>
         </ul>
-        
-        <div class="content">
-          <div class="image-wrapper">
-            <img src="coronation.png" style="width: 100%;" alt="Image">
-            <div class="overlay">
-              <h4 class="text-white">Sample Text</h4>
+ <table class="table table-bordered">
+  <tbody>
+    <tr>
+      <td colspan="2">
+        <div class="image-wrapper">
+          <img src="coronation.png" style="width: 100%;" alt="Image">
+          <div class="overlay">
+            <h4 class="text-white">Sample Text</h4>
+          </div>
+        </div>
+      </td>
+    </tr>
+    
+    <tr>
+      <td style="border-right-color: white;">
+        <div class="media mb-4">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">
+              Tuit 1
+              <span class="badge ml-2"> <i class="fas fa-check-circle verified"></i></span>
+              <small class="text-muted">3 hrs ago</small>
+            </h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in eros ut enim lacinia venenatis ac vel nulla.</p>
+          </div>
+        </div>
+      </td>
+      <td >
+             
+        <img  style="width: 50px;" class="ml-3 rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png
+        " alt="User">      </td>
+    </tr>
+
+    <tr>
+        <td style="border-right-color: white;">
+          <div class="media mb-4">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                Tuit 1
+                <span class="badge ml-2"> <i class="fas fa-check-circle verified"></i></span>
+                <small class="text-muted">3 hrs ago</small>
+              </h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in eros ut enim lacinia venenatis ac vel nulla.</p>
             </div>
           </div>
+        </td>
+        <td >
+     
+            <img  style="width: 50px;" class="ml-3 rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="User">        </td>
+      </tr>
+    
+      
+      <tr>
+        <td style="border-right-color: white;">
+          <div class="media mb-4">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                Tuit 1
+                <span class="badge ml-2"> <i class="fas fa-check-circle verified"></i></span>
+                <small class="text-muted">3 hrs ago</small>
+              </h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in eros ut enim lacinia venenatis ac vel nulla.</p>
+            </div>
+          </div>
+        </td>
+        <td >
+          <img style="width: 50px;" class="ml-3 rounded" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/JQuery_logo.svg/320px-JQuery_logo.svg.png" alt="User">
+        </td>
+      </tr>
+    
+      
+      <tr>
+        <td style="border-right-color: white;">
+          <div class="media mb-4">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                Tuit 1
+                <span class="badge ml-2"> <i class="fas fa-check-circle verified"></i></span>
+                <small class="text-muted">3 hrs ago</small>
+              </h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in eros ut enim lacinia venenatis ac vel nulla.</p>
+            </div>
+          </div>
+        </td>
+        <td >
+            <img  style="width: 50px;" class="ml-3 rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png
+            " alt="User">                </td>
+      </tr>
+      
+
+    
+  </tbody>
+</table>
           
-          <ul class="list-unstyled mt-4">
-            <li class="media mb-4">
-                <div class="media-body">
-                  <h5 class="mt-0 mb-1">
-                    Tuit 1
-                    <span class="badge  ml-2"> <i class="fas fa-check-circle verified"></i>
-                    </span>
-                   
-                    <small class="text-muted">3 hrs ago</small>
-                  </h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in eros ut enim lacinia venenatis ac vel nulla.</p>
-               
-                </div>
-              
-                <img  style="width: 50px;" class="ml-3 rounded" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/JQuery_logo.svg/320px-JQuery_logo.svg.png" alt="User">
-              </li>
-              
-              <li class="media mb-4">
-                <div class="media-body">
-                  <h5 class="mt-0 mb-1">
-                    Tuit 1
-                    <span class="badge  ml-2"> <i class="fas fa-check-circle verified"></i>
-                    </span>
-                   
-                    <small class="text-muted">3 hrs ago</small>
-                  </h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in eros ut enim lacinia venenatis ac vel nulla.</p>
-               
-                </div>
-              
-                <img  style="width: 50px;" class="ml-3 rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="User">
-            </li>
-
-                   
-            <li class="media mb-4">
-                <div class="media-body">
-                  <h5 class="mt-0 mb-1">
-                    Tuit 1
-                    <span class="badge  ml-2"> <i class="fas fa-check-circle verified"></i>
-                    </span>
-                   
-                    <small class="text-muted">3 hrs ago</small>
-                  </h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in eros ut enim lacinia venenatis ac vel nulla.</p>
-               
-                </div>
-              
-                <img  style="width: 50px;" class="ml-3 rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png
-                " alt="User">
-            </li>
-
-               
-            <li class="media mb-4">
-                <div class="media-body">
-                  <h5 class="mt-0 mb-1">
-                    Tuit 1
-                    <span class="badge  ml-2"> <i class="fas fa-check-circle verified"></i>
-                    </span>
-                   
-                    <small class="text-muted">3 hrs ago</small>
-                  </h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in eros ut enim lacinia venenatis ac vel nulla.</p>
-               
-                </div>
-              
-                <img  style="width: 50px;" class="ml-3 rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png
-                " alt="User">
-            </li>
-           
-              
-          </ul>
-        </div>
+          
+        
       </div>
       
       <div class="col-lg-3">
         <div class="sidebar">
-          <h4>Who to follow</h4>
-          <ul class="list-unstyled mt-4">
-            <li class="media mb-4">
-              <img style="width: 50px;" class="mr-3 rounded-circle" src="../tuitimg1.jpg" alt="User">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1">User 1</h5>
-                <p>@user1</p>
-              </div>
-              <button class="btn btn-primary rounded-pill">Follow</button>
-            </li>
-            <li class="media mb-4">
-              <img style="width: 50px;" class="mr-3 rounded-circle" src="../tuitimg2.jpg" alt="User">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1">User 2</h5>
-                <p>@user2</p>
-              </div>
-              <button class="btn btn-primary rounded-pill">Follow</button>
-            </li>
-            <!-- Add more users to follow as needed -->
-          </ul>
+          <table class="table table-bordered">
+          
+            <tbody>
+                <tr>
+                    <td>
+                        <h5>Who to follow</h5>
+                    </td>
+                  </tr>
+
+
+
+                <tr>
+                    <td>
+                      <div class="media">
+                        <img style="width: 50px;" class="mr-3 rounded-circle" src="../tuitimg1.jpg" alt="User">
+                        <div class="media-body">
+                          <h5 class="mt-0 mb-1">User 1</h5>
+                          <p>@user1</p>
+                        </div>
+                        <button class="btn btn-primary rounded-pill">Follow</button>
+                      </div>
+                    </td>
+                  </tr>
+              <tr>
+                <td>
+                  <div class="media">
+                    <img style="width: 50px;" class="mr-3 rounded-circle" src="../tuitimg1.jpg" alt="User">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">User 1</h5>
+                      <p>@user1</p>
+                    </div>
+                    <button class="btn btn-primary rounded-pill">Follow</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="media">
+                    <img style="width: 50px;" class="mr-3 rounded-circle" src="../tuitimg2.jpg" alt="User">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">User 2</h5>
+                      <p>@user2</p>
+                    </div>
+                    <button class="btn btn-primary rounded-pill">Follow</button>
+                  </div>
+                </td>
+              </tr>
+              <!-- Add more users to follow as needed -->
+            </tbody>
+          </table>
         </div>
       </div>
+      
     </div>
   </div>
   
