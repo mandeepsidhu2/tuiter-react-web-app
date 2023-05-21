@@ -11,6 +11,7 @@
   /* border-radius: 10px; */
   overflow: hidden;
   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  position: relative; /* Add position relative to the card */
 }
 
 .cd-card-header {
@@ -20,8 +21,8 @@
 }
 
 .cd-user-dp {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -88,8 +89,15 @@
 }
 
 .cd-user-info {
-  display: flex;
-  align-items: center;
+  position: absolute;
+  top: 8px; 
+  left: -90px;
+  z-index: 1;
+}
+
+.cd-card {
+  position: relative; /* Add this line */
+  overflow: visible; /* Add this line */
 }
 
 .cd-user-details {
@@ -113,13 +121,13 @@
 
 .cd-header {
   display: flex;
-  margin-left: 35%;
-  margin-bottom: 1%;
+  margin-left: 31%;
+  margin-bottom: 2%;
 }
 
 .cd-header-left {
-  float: left;
-  margin-right: 10%;
+ 
+  margin-left: 40px;
 }
 
 .cd-bookmarks {
@@ -130,7 +138,7 @@
 
 .cd-header-right {
   float: right;
-  margin-left: 250px;
+  margin-left: 405px;
 }
 
 .fa-icon {
@@ -155,4 +163,3 @@
   font-size: 14px;
   color: gray;
 }
-
