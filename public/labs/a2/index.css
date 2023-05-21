@@ -124,19 +124,20 @@
  }
  
 
-.pos-relative-nudge-up-right {
-    position: relative;
-    bottom: 30px;
-    left: 30px;
- }
+ .pos-relative-nudge-up-right {
+   position: relative;
+   bottom: 30px;
+   left: 30px;
+}
 .pos-relative-nudge-down-right {
-    position: relative;
-    top: 20px;
-    left: 20px;
- }
+   position: relative;
+   top: 20px;
+   left: 20px;
+}
 .pos-relative {
-    position: relative;
- }
+   position: relative;
+}
+
 
 
  .pos-absolute-10-10 {

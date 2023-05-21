@@ -3,162 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">       
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    /* Explore screen styles */
-    .wd-explore-container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: #f9f9f9;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .wd-search-container {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-
-    .wd-search-input-container {
-      position: relative;
-    }
-
-    .wd-search-input {
-      padding: 10px 50px;
-      border-radius: 20px;
-      background-color: #f2f2f2;
-      color: #444;
-      width: 700px;
-    }
-
-    .wd-search-icon {
-      position: absolute;
-      top: 50%;
-      left: 10px;
-      transform: translateY(-50%);
-      color: #777;
-      font-size: 16px;
-    }
-
-    .wd-gear-icon {
-      margin-left: auto;
-      color: #777;
-      font-size: 20px;
-      cursor: pointer;
-    }
-  
-        .wd-tabs ul {
-    display: flex;
-    list-style-type: none;
-    margin-bottom: 10px;
-    justify-content: space-between;
-    }
-
-.wd-tab {
-  margin-right: 10px;
-  padding-bottom: 5px;
-  border-bottom: 2px solid transparent;
-  cursor: pointer;
-}
-
-.wd-tab.active {
-  border-bottom: 2px solid blue;
-}
-
-    .wd-image {
-      position: relative;
-      margin-bottom: 20px;
-    }
-
-    .wd-image img {
-      width: 100%;
-      height: auto;
-    }
-
-    .wd-image-overlay {
-      position: absolute;
-      bottom: 10px;
-      left: 10px;
-      color: white;
-      font-size: 24px;
-    }
-
-    .wd-tweets {
-      list-style-type: none;
-    }
-
-    .wd-tweet-header {
-      display: flex;
-      align-items: center;
-      margin-bottom: 10px;
-    }
-
-    .wd-tweet-header img {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      margin-right: 10px;
-    }
-
-    .wd-tweet-username {
-      font-size: 18px;
-      font-weight: bold;
-    }
-
-    .wd-tweet-time {
-      color: gray;
-    }
-
-    .wd-tweet-content {
-      margin-bottom: 10px;
-    }
-
-
-
-
-
-
-    .wd-trending-section {
-  background-color: #f9f9f9;
-  border-radius: 5px;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.wd-trending-header {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.wd-trending-content {
-  display: flex;
-  flex-direction: column;
-  margin-right: 10px;
-}
-
-.wd-trending-topic {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.wd-trending-tweets {
-  color: gray;
-}
-
-
-
-  </style>
-
+  <link rel="stylesheet" href="index.css">
 <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
   <title>Tuiter - Explore (CSS)</title>
 </head>
@@ -169,7 +14,7 @@
         <span class="wd-search-icon">&#128269;</span>
         <input type="text" class="wd-search-input" placeholder="Search Tuiter">
       </div>
-      <span class="wd-gear-icon">&#9881;</span>
+    
     </div>
     <div class="wd-tabs">
 <ul>
@@ -182,6 +27,7 @@
 </div>
 <div class="wd-image">
   <img style="height: 300px; " src="coronation.png" alt="Image">
+  <h1 class="wd-image-text">The Coronation Of King Charles III</h1>
 </div>
 <ul class="wd-tweets">
   <li>
