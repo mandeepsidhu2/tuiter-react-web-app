@@ -8,72 +8,137 @@
   <title>Tuiter - Explore (CSS)</title>
 </head>
 <body>
-  <div class="wd-explore-container">
-    <div class="wd-search-container">
-      <div class="wd-search-input-container">
-        <span class="wd-search-icon">&#128269;</span>
-        <input type="text" class="wd-search-input" placeholder="Search Tuiter">
+  <div class="container">
+    <table class="navbar">
+      <tbody>
+        <tr>
+          <td>
+            <i class="fab fa-twitter" aria-hidden="true"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/tuiter/home.html">
+              <i class="fas fa-home"></i>
+              <span class="d-none d-lg-inline">Home</span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(12, 110, 253);">
+            <a href="#">
+            <i class="fas fa-search"></i>
+            <span class="d-none d-lg-inline">Explore</span>
+          </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <i class="fas fa-bell"></i>
+            <span class="d-none d-lg-inline">Notifications</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <i class="fas fa-envelope"></i>
+            <span class="d-none d-lg-inline">Messages</span>
+          </td>
+        </tr>
+        <tr>
+          <td >
+            <a href="/tuiter/bookmarks/bookmarks-css.html">
+              <i class="fas fa-bookmark"></i>
+              <span class="d-none d-lg-inline">Bookmarks</span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <i class="fas fa-list"></i>
+            <span class="d-none d-lg-inline">Lists</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <i class="fas fa-user"></i>
+            <span class="d-none d-lg-inline">Profile</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <i class="fas fa-ellipsis-h"></i>
+            <span class="d-none d-lg-inline">More</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="wd-explore-container">
+      <div class="wd-search-container">
+        <div class="wd-search-input-container">
+          <span class="wd-search-icon">&#128269;</span>
+          <input type="text" class="wd-search-input" placeholder="Search Tuiter">
+        </div>
+      
       </div>
-    
-    </div>
-    <div class="wd-tabs">
-<ul>
-    <li><span class="wd-tab active">For You</span></li>
-    <li><span class="wd-tab">Trending</span></li>
-    <li><span class="wd-tab">News</span></li>
-    <li><span class="wd-tab">Sports</span></li>
-    <li><span class="wd-tab">Entertainment</span></li>
-  </ul>
-</div>
-<div class="wd-image">
-  <img style="height: 300px; " src="coronation.png" alt="Image">
-  <h1 class="wd-image-text">The Coronation Of King Charles III</h1>
-</div>
-<ul class="wd-tweets">
-  <li>
-    <div class="wd-trending-section">
-        <div class="wd-trending-content">
-          <p class="wd-trending-tweets">Trending in News</p>
-          <p class="wd-trending-topic">Meghan</p>
-          <p class="wd-trending-tweets">56.1k Tweets</p>
-        </div>
-        <i class="fas fa-ellipsis-h"></i> 
-    </div>
-    <div class="wd-trending-section">
-        <div class="wd-trending-content">
-          <p class="wd-trending-tweets">Trending</p>
-          <p class="wd-trending-topic">Starlink</p>
-          <p class="wd-trending-tweets">26.4k Tweets</p>
-        </div>
-        <i class="fas fa-ellipsis-h"></i> 
-    </div>
-    <div class="wd-trending-section">
-        <div class="wd-trending-content">
-          <p class="wd-trending-tweets">Trending in Business Personalities</p>
-          <p class="wd-trending-topic">Wafren Buffet</p>
-          <p class="wd-trending-tweets">5,502 Tweets</p>
-        </div>
-        <i class="fas fa-ellipsis-h"></i> 
-    </div>
-    <div class="wd-trending-section">
-        <div class="wd-trending-content">
-          <p class="wd-trending-tweets">Trending in Political Figures</p>
-          <p class="wd-trending-topic">Poland</p>
-          <p class="wd-trending-tweets">29.9k Tweets</p>
-        </div>
-        <i class="fas fa-ellipsis-h"></i> 
-    </div>
-    <div class="wd-trending-section">
-        <div class="wd-trending-content">
-          <p class="wd-trending-tweets">Celebrities</p>
-          <p class="wd-trending-topic">Denzel Washington</p>
-          <p class="wd-trending-tweets">1,215 Tweets</p>
-        </div>
-        <i class="fas fa-ellipsis-h"></i> 
-    </div>
-  </li>
-  <!-- More tweets -->
-</ul>
+      <div class="wd-tabs">
+  <ul>
+      <li><span class="wd-tab active">For You</span></li>
+      <li><span class="wd-tab">Trending</span></li>
+      <li><span class="wd-tab">News</span></li>
+      <li><span class="wd-tab">Sports</span></li>
+      <li><span class="wd-tab">Entertainment</span></li>
+    </ul>
   </div>
+  <div class="wd-image">
+    <img style="height: 300px; " src="coronation.png" alt="Image">
+    <h1 class="wd-image-text">The Coronation Of King Charles III</h1>
+  </div>
+  <ul class="wd-tweets">
+    <li>
+      <div class="wd-trending-section">
+          <div class="wd-trending-content">
+            <p class="wd-trending-tweets">Trending in News</p>
+            <p class="wd-trending-topic">Meghan</p>
+            <p class="wd-trending-tweets">56.1k Tweets</p>
+          </div>
+          <i class="fas fa-ellipsis-h"></i> 
+      </div>
+      <div class="wd-trending-section">
+          <div class="wd-trending-content">
+            <p class="wd-trending-tweets">Trending</p>
+            <p class="wd-trending-topic">Starlink</p>
+            <p class="wd-trending-tweets">26.4k Tweets</p>
+          </div>
+          <i class="fas fa-ellipsis-h"></i> 
+      </div>
+      <div class="wd-trending-section">
+          <div class="wd-trending-content">
+            <p class="wd-trending-tweets">Trending in Business Personalities</p>
+            <p class="wd-trending-topic">Wafren Buffet</p>
+            <p class="wd-trending-tweets">5,502 Tweets</p>
+          </div>
+          <i class="fas fa-ellipsis-h"></i> 
+      </div>
+      <div class="wd-trending-section">
+          <div class="wd-trending-content">
+            <p class="wd-trending-tweets">Trending in Political Figures</p>
+            <p class="wd-trending-topic">Poland</p>
+            <p class="wd-trending-tweets">29.9k Tweets</p>
+          </div>
+          <i class="fas fa-ellipsis-h"></i> 
+      </div>
+      <div class="wd-trending-section">
+          <div class="wd-trending-content">
+            <p class="wd-trending-tweets">Celebrities</p>
+            <p class="wd-trending-topic">Denzel Washington</p>
+            <p class="wd-trending-tweets">1,215 Tweets</p>
+          </div>
+          <i class="fas fa-ellipsis-h"></i> 
+      </div>
+    </li>
+    <!-- More tweets -->
+  </ul>
+    </div>
+ </div>
 </body>
 </html>
