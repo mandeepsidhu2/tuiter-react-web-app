@@ -9,122 +9,188 @@
   <title>Card Feed</title>
 </head>
 <body>
-  
-  
-  <div class="cd-header">
-    <i class="fas fa-arrow-left"></i>
-    <div class="cd-header-left">
-      
-      <span class="cd-bookmarks">All Bookmarks</span>
-    </div>
+  <div class="container">
+   <table class="navbar">
+    <tbody>
+      <tr>
+        <td>
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="/tuiter/home.html">
+            <i class="fas fa-home"></i>
+            <span class="d-none d-lg-inline">Home</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td >
+          <a href="/tuiter/explore/explore-css.html">
+          <i class="fas fa-search"></i>
+          <span class="d-none d-lg-inline">Explore</span>
+        </a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i class="fas fa-bell"></i>
+          <span class="d-none d-lg-inline">Notifications</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i class="fas fa-envelope"></i>
+          <span class="d-none d-lg-inline">Messages</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="background-color: rgb(12, 110, 253);">
+          <a href="#">
+            <i class="fas fa-bookmark"></i>
+            <span class="d-none d-lg-inline">Bookmarks</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i class="fas fa-list"></i>
+          <span class="d-none d-lg-inline">Lists</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i class="fas fa-user"></i>
+          <span class="d-none d-lg-inline">Profile</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i class="fas fa-ellipsis-h"></i>
+          <span class="d-none d-lg-inline">More</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
-    <div class="cd-header-right">
-      <i class="fas fa-ellipsis-h cd-ellipsis-icon"></i>
+    <div class="content">
+    <div class="cd-header">
+      <i class="fas fa-arrow-left"></i>
+      <div class="cd-header-left">
+        
+        <span class="cd-bookmarks">All Bookmarks</span>
+      </div>
+
+      <div class="cd-header-right">
+        <i class="fas fa-ellipsis-h cd-ellipsis-icon"></i>
+      </div>
+    </div>
+    <div class="cd-card-feed">
+      <div class="cd-card">
+        <div class="cd-user-info-container">
+          <div class="cd-user-info">
+            <img class="cd-user-dp" src="../tuitimg2.jpg" alt="User DP">
+          </div>
+        </div>
+        <div class="cd-card-header">
+
+            <div class="cd-user-details">
+              <span class="cd-username">Jonty Smith</span>
+              <i class="fas fa-check-circle cd-verified"></i>
+              <span class="cd-date">May 16, 2023</span>
+            </div>
+          
+          <div class="cd-ellipsis-container">
+            <i class="fas fa-ellipsis-h cd-ellipsis-icon"></i>
+          </div>
+        </div>
+        <div class="cd-tweet-content">
+          <p class="cd-tweet-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis tincidunt arcu, et viverra dui ultricies ut.</p>
+        </div>
+        <div class="cd-card-content">
+          <img class="cd-card-image" src="tesla1.png" alt="Image 1">
+          <p class="cd-card-text">Sed finibus purus non urna egestas pulvinar quis vitae risus. Nam consequat orci at augue consectetur interdum. Sed venenatis mattis lorem, sit amet molestie justo porta ac. Suspendisse suscipit semper mi a maximus. Curabitur dapibus condimentum orci ut condimentum. Aliquam accumsan vitae felis id varius. Pellentesque scelerisque eleifend felis, nec congue velit bibendum vitae. Cras nisi justo, tristique ac augue at, pretium ullamcorper sapien.</p>
+
+        </div>
+        <div class="cd-card-actions">
+          <span class="cd-icon-with-number">
+            <i class="far fa-comments"></i>
+            <span class="cd-icon-number">56</span>
+          </span>
+          <span class="cd-icon-with-number">
+            <i class="far fa-retweet"></i>
+            <span class="cd-icon-number">6</span>
+          </span>
+          <span class="cd-icon-with-number">
+            <i class="far fa-heart"></i>
+            <span class="cd-icon-number">95</span>
+          </span>
+          <span class="cd-icon-with-number">
+            <i class="far fa-chart-bar"></i>
+            <span class="cd-icon-number">31</span>
+          </span>
+          <span class="cd-icon-with-number">
+            <i class="far fa-share"></i>
+            <span class="cd-icon-number">24</span>
+          </span>
+      
+        </div>
+      </div>
+
+      <hr width="30%" color="#D3D3D3" />
+
+      <div class="cd-card">
+        <div class="cd-user-info-container">
+          <div class="cd-user-info">
+            <img class="cd-user-dp" src="../tuitimg1.jpg" alt="User DP">
+          </div>
+        </div>
+        <div class="cd-card-header">
+
+            <div class="cd-user-details">
+              <span class="cd-username">Jane Smith</span>
+              <i class="fas fa-check-circle cd-verified"></i>
+              <span class="cd-date">May 16, 2023</span>
+            </div>
+          
+          <div class="cd-ellipsis-container">
+            <i class="fas fa-ellipsis-h cd-ellipsis-icon"></i>
+          </div>
+        </div>
+        <div class="cd-tweet-content">
+          <p class="cd-tweet-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis tincidunt arcu, et viverra dui ultricies ut.</p>
+        </div>
+        <div class="cd-card-content">
+          <img class="cd-card-image" src="tesla2.png" alt="Image 2">
+          <p class="cd-card-text">Proin nec diam egestas lacus placerat semper. Phasellus maximus varius venenatis. Vestibulum molestie scelerisque rutrum. Aliquam erat volutpat. Nulla eget luctus nisi. Morbi non mattis odio. Nam posuere purus nec pretium semper. Nulla vitae dui sollicitudin, ullamcorper dui rhoncus, blandit risus. Vivamus a varius magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi.</p>
+        </div>
+        <div class="cd-card-actions">
+          <span class="cd-icon-with-number">
+            <i class="far fa-comments"></i>
+            <span class="cd-icon-number">15</span>
+          </span>
+          <span class="cd-icon-with-number">
+            <i class="far fa-retweet"></i>
+            <span class="cd-icon-number">62</span>
+          </span>
+          <span class="cd-icon-with-number">
+            <i class="far fa-heart"></i>
+            <span class="cd-icon-number">52</span>
+          </span>
+          <span class="cd-icon-with-number">
+            <i class="far fa-chart-bar"></i>
+            <span class="cd-icon-number">88</span>
+          </span>
+          <span class="cd-icon-with-number">
+            <i class="far fa-share"></i>
+            <span class="cd-icon-number">11</span>
+          </span>
+      
+        </div>
+      </div>
     </div>
   </div>
-  <div class="cd-card-feed">
-    <div class="cd-card">
-      <div class="cd-user-info-container">
-        <div class="cd-user-info">
-          <img class="cd-user-dp" src="../tuitimg2.jpg" alt="User DP">
-        </div>
-      </div>
-      <div class="cd-card-header">
-
-          <div class="cd-user-details">
-            <span class="cd-username">Jonty Smith</span>
-            <i class="fas fa-check-circle cd-verified"></i>
-            <span class="cd-date">May 16, 2023</span>
-          </div>
-        
-        <div class="cd-ellipsis-container">
-          <i class="fas fa-ellipsis-h cd-ellipsis-icon"></i>
-        </div>
-      </div>
-      <div class="cd-tweet-content">
-        <p class="cd-tweet-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis tincidunt arcu, et viverra dui ultricies ut.</p>
-      </div>
-      <div class="cd-card-content">
-        <img class="cd-card-image" src="tesla1.png" alt="Image 1">
-        <p class="cd-card-text">Sed finibus purus non urna egestas pulvinar quis vitae risus. Nam consequat orci at augue consectetur interdum. Sed venenatis mattis lorem, sit amet molestie justo porta ac. Suspendisse suscipit semper mi a maximus. Curabitur dapibus condimentum orci ut condimentum. Aliquam accumsan vitae felis id varius. Pellentesque scelerisque eleifend felis, nec congue velit bibendum vitae. Cras nisi justo, tristique ac augue at, pretium ullamcorper sapien.</p>
-
-      </div>
-      <div class="cd-card-actions">
-        <span class="cd-icon-with-number">
-          <i class="far fa-comments"></i>
-          <span class="cd-icon-number">56</span>
-        </span>
-        <span class="cd-icon-with-number">
-          <i class="far fa-retweet"></i>
-          <span class="cd-icon-number">6</span>
-        </span>
-        <span class="cd-icon-with-number">
-          <i class="far fa-heart"></i>
-          <span class="cd-icon-number">95</span>
-        </span>
-        <span class="cd-icon-with-number">
-          <i class="far fa-chart-bar"></i>
-          <span class="cd-icon-number">31</span>
-        </span>
-        <span class="cd-icon-with-number">
-          <i class="far fa-share"></i>
-          <span class="cd-icon-number">24</span>
-        </span>
-     
-      </div>
-    </div>
-
-    <hr width="30%" color="#D3D3D3" />
-
-    <div class="cd-card">
-      <div class="cd-user-info-container">
-        <div class="cd-user-info">
-          <img class="cd-user-dp" src="../tuitimg1.jpg" alt="User DP">
-        </div>
-      </div>
-      <div class="cd-card-header">
-
-          <div class="cd-user-details">
-            <span class="cd-username">Jane Smith</span>
-            <i class="fas fa-check-circle cd-verified"></i>
-            <span class="cd-date">May 16, 2023</span>
-          </div>
-        
-        <div class="cd-ellipsis-container">
-          <i class="fas fa-ellipsis-h cd-ellipsis-icon"></i>
-        </div>
-      </div>
-      <div class="cd-tweet-content">
-        <p class="cd-tweet-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis tincidunt arcu, et viverra dui ultricies ut.</p>
-      </div>
-      <div class="cd-card-content">
-        <img class="cd-card-image" src="tesla2.png" alt="Image 2">
-        <p class="cd-card-text">Proin nec diam egestas lacus placerat semper. Phasellus maximus varius venenatis. Vestibulum molestie scelerisque rutrum. Aliquam erat volutpat. Nulla eget luctus nisi. Morbi non mattis odio. Nam posuere purus nec pretium semper. Nulla vitae dui sollicitudin, ullamcorper dui rhoncus, blandit risus. Vivamus a varius magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi.</p>
-      </div>
-      <div class="cd-card-actions">
-        <span class="cd-icon-with-number">
-          <i class="far fa-comments"></i>
-          <span class="cd-icon-number">15</span>
-        </span>
-        <span class="cd-icon-with-number">
-          <i class="far fa-retweet"></i>
-          <span class="cd-icon-number">62</span>
-        </span>
-        <span class="cd-icon-with-number">
-          <i class="far fa-heart"></i>
-          <span class="cd-icon-number">52</span>
-        </span>
-        <span class="cd-icon-with-number">
-          <i class="far fa-chart-bar"></i>
-          <span class="cd-icon-number">88</span>
-        </span>
-        <span class="cd-icon-with-number">
-          <i class="far fa-share"></i>
-          <span class="cd-icon-number">11</span>
-        </span>
-     
-      </div>
-    </div>
   </div>
 </body>
 </html>
