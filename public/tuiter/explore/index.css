@@ -22,6 +22,9 @@
 .wd-search-input-container {
   position: relative;
 }
+.wd-search-input-container input{
+  background-color: #eeee;
+}
 
 .wd-search-input {
   padding: 10px 50px;
