@@ -14,7 +14,7 @@
   /* border-radius: 10px; */
   overflow: hidden;
   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
-  position: relative; /* Add position relative to the card */
+  position: relative; 
 }
 
 .cd-card-header {
@@ -99,8 +99,8 @@
 }
 
 .cd-card {
-  position: relative; /* Add this line */
-  overflow: visible; /* Add this line */
+  position: relative; 
+  overflow: visible;
 }
 
 .cd-user-details {
@@ -213,3 +213,4 @@
   flex: 1;
   padding: 20px;
 }
+
