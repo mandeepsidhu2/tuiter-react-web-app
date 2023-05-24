@@ -3,7 +3,7 @@ function FilterFunction() {
     const stringArray1 = ['string1', 'string2'];
 
     const fourIndex = numberArray1.findIndex(a => a === 4);
-    const string3Index = stringArray1.findIndex(a => a === 'string3');
+    const string3Index = stringArray1.findIndex(a => a === 'string2');
 
     const numbersGreaterThan2 = numberArray1.filter(a => a > 2);
     const evenNumbers = numberArray1.filter(a => a % 2 === 0);

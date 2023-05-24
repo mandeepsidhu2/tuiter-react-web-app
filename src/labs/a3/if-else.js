@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 function IfElseConditionals() {
     let true1 = true
     let false1 = false

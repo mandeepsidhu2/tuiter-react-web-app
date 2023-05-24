@@ -1,5 +1,5 @@
 function WorkingWithArrays() {
-    let numberArray1 = [1, 2, 3, 4, 5];
+    let numberArray1 = [2, 3, 4, 5];
     let stringArray1 = ['string1', 'string2'];
     let functionScoped=25;
     let blockScoped=-3;
