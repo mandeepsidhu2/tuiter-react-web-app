@@ -8,8 +8,6 @@ function MapFunction() {
             <h3>Map</h3>
             squares = {squares}<br/>
             cubes = {cubes}
-            <h3>JSON Stringify</h3>
-            squares = { JSON.stringify(squares) } <br />
         </div>
         
     );

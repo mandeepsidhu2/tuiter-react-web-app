@@ -18,6 +18,8 @@ import House from "./house";
 import Spread from "./spread";
 import Destructing from "./destructing";
 import FunctionDestructing from "./function-destructing";
+import JsonStringify from "./json-stringify";
+import FindIndex from "./find-index";
 function JavaScript() {
     console.log('Hello World!');
     return(
@@ -35,7 +37,9 @@ function JavaScript() {
           <AddingAndRemovingDataToFromArrays/>
           <ForLoops/>
           <MapFunction/>
+          <JsonStringify/>
           <FindFunction/>
+          <FindIndex/>
           <FilterFunction/>
           <TemplateLiterals/>
           <House/>
