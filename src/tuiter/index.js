@@ -25,7 +25,7 @@ function Tuiter() {
       </Routes>
 
        </div>
-       <div className="col-xl-3 col-lg-3 col-3">
+       <div className="col-xl-3 col-lg-3  d-lg-inline d-none">
        <WhoToFollowList />
       
         </div>
