@@ -18,7 +18,7 @@ function BooleanVariables() {
     let notTrue   = '1' === 1
     return(
         <div>
-          <h2>Variables Types</h2>
+          <h2>Boolean Variables</h2>
           true1 = { true1 +""}<br/>
           false1 = { false1 +""}<br/>
           false2 = { false2 +""}<br/>
