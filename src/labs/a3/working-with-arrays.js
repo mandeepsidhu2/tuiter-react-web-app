@@ -16,7 +16,7 @@ function WorkingWithArrays() {
 
     return(
         <div>
-            <h1>Working With Arrays</h1>
+            <h3>Working With Arrays</h3>
             numberArray1 = {numberArray1}<br/>
             stringArray1 = {stringArray1}<br/>
             variableArray1 = {variableArray1}<br/>
