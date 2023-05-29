@@ -4,7 +4,7 @@ function ArrayIndexAndLength() {
     const index1 = numberArray1.indexOf(3);
     return(
         <div>
-            <h1>Array index and length</h1>
+            <h3>Array index and length</h3>
             length1 = {length1}<br/>
             index1 = {index1} <br/>
         </div>

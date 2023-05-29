@@ -12,7 +12,7 @@ function ForLoops() {
   
     return(
         <div>
-            <h1>Looping through Arrays</h1>
+            <h3>Looping through Arrays</h3>
             stringArray2 = {stringArray2}
         </div>
         

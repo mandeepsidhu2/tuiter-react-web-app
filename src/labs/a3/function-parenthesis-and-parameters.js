@@ -6,7 +6,7 @@ function FunctionParenthesisAndParameters() {
 
     return(
         <div>
-             <h1>Parenthesis And Parameters</h1>
+             <h3>Parenthesis And Parameters</h3>
              twoSquared = {twoSquared}<br />
              square(2) = {square(2)}<br />
              threePlusOne = {threePlusOne}<br />

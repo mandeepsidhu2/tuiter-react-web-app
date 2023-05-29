@@ -7,7 +7,7 @@ function AddingAndRemovingDataToFromArrays() {
     stringArray1.splice(1, 1);
     return(
         <div>
-              <h1>Add and remove data to arrays</h1>
+              <h3>Add and remove data to arrays</h3>
               numberArray1 = {numberArray1} <br/>
               stringArray1 = {stringArray1} <br/>
         </div>
