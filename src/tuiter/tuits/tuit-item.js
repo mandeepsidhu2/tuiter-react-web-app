@@ -1,0 +1,296 @@
+import React from "react";
+const TuitItem =  (
+    {
+      tuit = 
+      {
+      "_id": 234,
+      "topic": "Space",
+      "userName": "SpaceX",
+      "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+      "time": "2h",
+      "image": "spacex.png",
+      "liked": true,
+      "replies": 123,
+      "retuits": 432,
+      "likes": 2345,
+      "handle": "@spacex",
+      "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
+      }
+    }
+   )=> {
+
+ return(
+
+
+   
+    <div>
+        <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css"/>
+        <style>
+            {
+                `
+                .cd-card-feed {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                  }
+                  
+                  .cd-card {
+                    width: 80%;
+                    margin-bottom: 20px;
+                    background-color: #ffffff;
+                    overflow: hidden;
+                    position: relative;
+                  }
+                  
+                  .cd-card-header {
+                    display: flex;
+                    align-items: center;
+                    padding: 0px;
+                  }
+                  
+                  .cd-user-dp {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                  }
+                  
+                  .cd-username {
+                    font-size: 14px;
+                    font-weight: bold;
+                  }
+                  
+                  .cd-card-image {
+                    width: 100%;
+                    height: auto;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                  }
+                  
+                  .cd-card-content {
+                    border: 3px solid rgb(247, 247, 247);
+                    border-radius: 10px;
+                    overflow: hidden;
+                  }
+                  
+                  .cd-card-text {
+                    margin-bottom: 10px;
+                  }
+                  
+                  .cd-card-actions {
+                    padding-top: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                  }
+                  
+                  .cd-card-actions i {
+                    margin-left: 10px;
+                    color: gray;
+                    cursor: pointer;
+                  }
+                  
+                  .cd-verified {
+                    color: #1da1f2;
+                    font-size: 12px;
+                    margin: 15px;
+                  }
+                  
+                  .cd-date {
+                    font-size: 12px;
+                    color: gray;
+                  }
+                  
+                  .cd-tweet-content {
+                    padding: 0px;
+                    background-color: #ffffff;
+                  }
+                  
+                  .cd-tweet-text {
+                    margin-bottom: 10px;
+                  }
+                  
+                  .cd-user-info {
+                    position: absolute;
+                    top: 8px; 
+                    left: -90px;
+                    z-index: 1;
+                  }
+                  
+                  .cd-card {
+                    position: relative;
+                    overflow: visible;
+                  }
+                  
+                  .cd-user-details {
+                    display: flex;
+                    align-items: center;
+                    margin-right: auto;
+                  }
+                  
+                  .cd-username {
+                    margin-right: 5px;
+                  }
+                  
+                  .cd-ellipsis-container {
+                    margin-left: auto;
+                  }
+                  
+                  .cd-ellipsis-icon {
+                    color: gray;
+                    cursor: pointer;
+                  }
+                  
+                  .cd-header {
+                    display: flex;
+                    margin-left: 31%;
+                    margin-bottom: 2%;
+                  }
+                  
+                  .cd-header-left {
+                    margin-left: 40px;
+                  }
+                  
+                  .cd-bookmarks {
+                    font-weight: bold;
+                    margin-left: 20px;
+                    margin-right: 10px;
+                  }
+                  
+                  .cd-header-right {
+                    float: right;
+                    margin-left: 405px;
+                  }
+                  
+                  .fa-icon {
+                    color: gray;
+                    cursor: pointer;
+                  }
+                  
+                  .cd-card-actions {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                  }
+                  
+                  .cd-icon-with-number {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 15px;
+                  }
+                  
+                  .cd-icon-number {
+                    margin-left: 5px;
+                    font-size: 14px;
+                    color: gray;
+                  }
+                  
+                  .container {
+                    display: flex;
+                  }
+                  
+                  .navbar {
+                    width: 200px;
+                    padding: 0;
+                    border-collapse: collapse;
+                    background-color: #ffffff;
+                    max-height: 50vh;
+                    overflow-y: auto;
+                  }
+                  
+                  .navbar {
+                    margin-left: 10%;
+                    position: absolute;
+                    width: 200px;
+                    padding: 0;
+                    border-collapse: collapse;
+                  }
+                  
+                  .navbar td {
+                    padding: 10px 0 10px 20px;
+                    color: black;
+                  }
+                  
+                  .navbar td i {
+                    margin-right: 10px;
+                  }
+                  
+                  .navbar td a {
+                    color: black;
+                    text-decoration: none;
+                  }
+                  
+                  .navbar td:hover {
+                    background-color: rgb(12, 110, 253);
+                    color: white;
+                  }
+                  
+                  .content {
+                    flex: 1;
+                    padding: 20px;
+                  }
+                `
+
+
+            }
+            
+
+        </style>
+        
+        <title>Card Feed</title>
+        </head>
+        <body>
+     
+            
+        <div class="cd-card">
+            <div class="cd-user-info-container">
+            <div class="cd-user-info">
+                <img class="cd-user-dp" src={tuit.image} alt="User DP"/>
+            </div>
+            </div>
+            <div class="cd-card-header">
+
+                <div class="cd-user-details">
+                <span class="cd-username">{tuit.userName}</span>
+                <i class="fas fa-check-circle cd-verified"></i>
+                <span class="cd-date">{tuit.time}</span>
+                </div>
+            
+            <div class="cd-ellipsis-container">
+                <i class="fas fa-ellipsis-h cd-ellipsis-icon"></i>
+            </div>
+            </div>
+            <div class="cd-tweet-content">
+            <p class="cd-tweet-text">{tuit.tuit}</p>
+            </div>
+          
+            <div class="cd-card-actions">
+            <span class="cd-icon-with-number">
+                <i class="far fa-comments"></i>
+                <span class="cd-icon-number">{tuit.replies}</span>
+            </span>
+            <span class="cd-icon-with-number">
+                <i class="far fa-retweet"></i>
+                <span class="cd-icon-number">{tuit.retuits}</span>
+            </span>
+            <span class="cd-icon-with-number">
+                <i class="far fa-heart"></i>
+                <span class="cd-icon-number">{tuit.likes}</span>
+            </span>
+            <span class="cd-icon-with-number">
+                <i class="far fa-share"></i>
+                <span class="cd-icon-number">{tuit.retuits}</span>
+            </span>
+        
+            </div>
+        </div>
+        <hr width="80%" color="#D3D3D3" />
+        
+    </body>
+    </div>
+  
+ );
+};
+export default TuitItem;
