@@ -1,4 +1,11 @@
 import React from "react";
+import {useDispatch} from "react-redux";
+import {deleteTuit} from "../reducers/tuits-reducer";
+
+
+
+
+
 const TuitItem =  (
     {
       tuit = 
@@ -18,6 +25,10 @@ const TuitItem =  (
       }
     }
    )=> {
+    const dispatch = useDispatch();
+    const deleteTuitHandler = (id) => {
+        dispatch(deleteTuit(id));
+      }
 
  return(
 
@@ -30,15 +41,9 @@ const TuitItem =  (
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css"/>
         <style>
             {
-                `
-                .cd-card-feed {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                  }
-                  
+                `     
                   .cd-card {
-                    width: 80%;
+                    width: 100%;
                     margin-bottom: 20px;
                     background-color: #ffffff;
                     overflow: hidden;
@@ -259,7 +264,8 @@ const TuitItem =  (
                 </div>
             
             <div class="cd-ellipsis-container">
-                <i class="fas fa-ellipsis-h cd-ellipsis-icon"></i>
+     
+            <i class=" fas fa-solid fa-x fa-xs"  onClick={() => deleteTuitHandler(tuit._id)}></i>
             </div>
             </div>
             <div class="cd-tweet-content">
@@ -286,7 +292,7 @@ const TuitItem =  (
         
             </div>
         </div>
-        <hr width="80%" color="#D3D3D3" />
+        <hr width="100%" color="#D3D3D3" />
         
     </body>
     </div>
