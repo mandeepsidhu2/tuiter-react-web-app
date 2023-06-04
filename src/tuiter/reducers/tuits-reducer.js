@@ -34,9 +34,19 @@ const tuitsSlice = createSlice({
        ...templateTuit,
        _id: (new Date()).getTime(),
      })
+   },
+   toggleLikeTuit(state,action){
+    const index = state.tuits
+    .findIndex(tuit =>
+       tuit._id === action.payload);
+       if(state.tuits[index].liked)
+         state.tuits[index].likes-=1;
+      else 
+       state.tuits[index].likes+=1;
+      state.tuits[index].liked=!state.tuits[index].liked;
    }
  }
 });
 
-export const {createTuit,deleteTuit} = tuitsSlice.actions;
+export const {createTuit,deleteTuit,toggleLikeTuit} = tuitsSlice.actions;
 export default tuitsSlice.reducer;

@@ -1,6 +1,6 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "../reducers/tuits-reducer";
+import {deleteTuit,toggleLikeTuit} from "../reducers/tuits-reducer";
 
 
 
@@ -31,6 +31,10 @@ const TuitItem =  (
     const deleteTuitHandler = (id) => {
         dispatch(deleteTuit(id));
       }
+    const toggleLikeTuitHandler = (id) =>{
+      dispatch(toggleLikeTuit(id));
+
+    }
 
  return(
 
@@ -45,6 +49,7 @@ const TuitItem =  (
             {
                 `     
                   .cd-card {
+                  
                     border: 1px solid #C8C8C9;
                     border-top:0px;
                     border-bottom:0px;
@@ -52,11 +57,11 @@ const TuitItem =  (
                   
                     margin: 0;
                   padding: 10px;
-                    width: 100%;
+                    max-width: 100%;
                  
                     background-color: #ffffff;
-                    overflow: hidden;
-                    position: relative;
+                  
+                   
                   }
                   
                   .cd-card-header {
@@ -101,7 +106,7 @@ const TuitItem =  (
                   }
                   
                   .cd-card-actions i {
-                    margin-left: 10px;
+                   
                     color: gray;
                     cursor: pointer;
                   }
@@ -124,14 +129,11 @@ const TuitItem =  (
                   
                   .cd-tweet-text {
                     margin-bottom: 10px;
+                 
+                   
                   }
+              
                   
-                  // .cd-user-info {
-                  //   position: absolute;
-                  //   top: 8px; 
-                  //   left: -90px;
-                  //   z-index: 1;
-                  // }
                   
                   .cd-card {
                     position: relative;
@@ -183,16 +185,13 @@ const TuitItem =  (
                     cursor: pointer;
                   }
                   
-                  .cd-card-actions {
-                    display: flex;
-                    justify-content: space-evenly;
-                    align-items: center;
-                  }
+               
                   
                   .cd-icon-with-number {
                     display: flex;
                     align-items: center;
-                    margin-right: 15px;
+                   padding-right:15%;
+                    
                   }
                   
                   .cd-icon-number {
@@ -258,7 +257,7 @@ const TuitItem =  (
         <body>
         <div>
         <div class="cd-card container">
-          <div class="row">
+          <div class="row" style={{width:"100%"}}>
               <div class="col-1">
                 <div class="cd-user-info">
                     <img class="cd-user-dp" src={tuit.image} alt="User DP"/>
@@ -292,8 +291,11 @@ const TuitItem =  (
                     <span class="cd-icon-number">{tuit.retuits}</span>
                 </span>
                 <span class="cd-icon-with-number">
-                    <i class="far fa-heart"></i>
-                    <span class="cd-icon-number">{tuit.likes}</span>
+                  { tuit.liked?
+                   <i class="fa-solid fa-heart" style={{color: "#dc3446"}} onClick={() => toggleLikeTuitHandler(tuit._id)}></i>:
+                    <i class="far fa-heart" onClick={() => toggleLikeTuitHandler(tuit._id)}></i>
+                  }
+                  <span class="cd-icon-number">{tuit.likes}</span>
                 </span>
                 <span class="cd-icon-with-number">
                     <i class="far fa-share"></i>

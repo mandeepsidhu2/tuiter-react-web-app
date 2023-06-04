@@ -45,10 +45,11 @@ const Tuits = () => {
       {tuits.length ?<div style={{ border: "1px solid #C8C8C9", width: "100%",height:"5px" ,borderBottom:"0px",borderRadius: "8px 8px 0 0" }}></div>:null}
 
             {
-        tuits.map((tuit,idx) =>
-            <TuitItem
-            key={tuit._id} tuit={tuit} idx={idx} len={tuits.length}/> )
-
+        tuits.map((tuit, idx) => (
+            <span style={{width:"100%"}}>
+            <TuitItem key={tuit._id} tuit={tuit} idx={idx} len={tuits.length} />
+            </span>
+        ))
         }
 
         </div>
