@@ -22,7 +22,9 @@ const TuitItem =  (
       "likes": 2345,
       "handle": "@spacex",
       "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
-      }
+      },
+      idx=0,
+      len=1
     }
    )=> {
     const dispatch = useDispatch();
@@ -43,8 +45,15 @@ const TuitItem =  (
             {
                 `     
                   .cd-card {
+                    border: 1px solid #C8C8C9;
+                    border-top:0px;
+                    border-bottom:0px;
+                    
+                  
+                    margin: 0;
+                  padding: 10px;
                     width: 100%;
-                    margin-bottom: 20px;
+                 
                     background-color: #ffffff;
                     overflow: hidden;
                     position: relative;
@@ -117,12 +126,12 @@ const TuitItem =  (
                     margin-bottom: 10px;
                   }
                   
-                  .cd-user-info {
-                    position: absolute;
-                    top: 8px; 
-                    left: -90px;
-                    z-index: 1;
-                  }
+                  // .cd-user-info {
+                  //   position: absolute;
+                  //   top: 8px; 
+                  //   left: -90px;
+                  //   z-index: 1;
+                  // }
                   
                   .cd-card {
                     position: relative;
@@ -244,55 +253,66 @@ const TuitItem =  (
 
         </style>
         
-        <title>Card Feed</title>
+       
         </head>
         <body>
-     
-            
-        <div class="cd-card">
-            <div class="cd-user-info-container">
-            <div class="cd-user-info">
-                <img class="cd-user-dp" src={tuit.image} alt="User DP"/>
-            </div>
-            </div>
-            <div class="cd-card-header">
-
-                <div class="cd-user-details">
-                <span class="cd-username">{tuit.userName}</span>
-                <i class="fas fa-check-circle cd-verified"></i>
-                <span class="cd-date">{tuit.time}</span>
+        <div>
+        <div class="cd-card container">
+          <div class="row">
+              <div class="col-1">
+                <div class="cd-user-info">
+                    <img class="cd-user-dp" src={tuit.image} alt="User DP"/>
                 </div>
-            
-            <div class="cd-ellipsis-container">
-     
-            <i class=" fas fa-solid fa-x fa-xs"  onClick={() => deleteTuitHandler(tuit._id)}></i>
-            </div>
-            </div>
-            <div class="cd-tweet-content">
-            <p class="cd-tweet-text">{tuit.tuit}</p>
-            </div>
-          
-            <div class="cd-card-actions">
-            <span class="cd-icon-with-number">
-                <i class="far fa-comments"></i>
-                <span class="cd-icon-number">{tuit.replies}</span>
-            </span>
-            <span class="cd-icon-with-number">
-                <i class="far fa-retweet"></i>
-                <span class="cd-icon-number">{tuit.retuits}</span>
-            </span>
-            <span class="cd-icon-with-number">
-                <i class="far fa-heart"></i>
-                <span class="cd-icon-number">{tuit.likes}</span>
-            </span>
-            <span class="cd-icon-with-number">
-                <i class="far fa-share"></i>
-                <span class="cd-icon-number">{tuit.retuits}</span>
-            </span>
+              </div>
+              <div class="col-11">
+                <div class="cd-card-header">
+
+                    <div class="cd-user-details">
+                    <span class="cd-username">{tuit.userName}</span>
+                    <i class="fas fa-check-circle cd-verified"></i>
+                    <span class="cd-date">{tuit.time}</span>
+                    </div>
+                
+                <div class="cd-ellipsis-container">
         
+                <i class=" fas fa-solid fa-x fa-xs"  onClick={() => deleteTuitHandler(tuit._id)}></i>
+                </div>
+                </div>
+                <div class="cd-tweet-content">
+                <p class="cd-tweet-text">{tuit.tuit}</p>
+                </div>
+              
+                <div class="cd-card-actions">
+                <span class="cd-icon-with-number">
+                    <i class="far fa-comments"></i>
+                    <span class="cd-icon-number">{tuit.replies}</span>
+                </span>
+                <span class="cd-icon-with-number">
+                    <i class="far fa-retweet"></i>
+                    <span class="cd-icon-number">{tuit.retuits}</span>
+                </span>
+                <span class="cd-icon-with-number">
+                    <i class="far fa-heart"></i>
+                    <span class="cd-icon-number">{tuit.likes}</span>
+                </span>
+                <span class="cd-icon-with-number">
+                    <i class="far fa-share"></i>
+                    <span class="cd-icon-number">{tuit.retuits}</span>
+                </span>
+            
+                </div>
+              </div>
             </div>
         </div>
-        <hr width="100%" color="#D3D3D3" />
+      
+        {(idx!=len-1)?
+        <div style={{ border: "1px solid #C8C8C9", height: "0px",borderTop:"0px" }}></div>:
+        <div style={{ border: "1px solid #C8C8C9", width: "100%",height:"5px" ,borderTop:"0px",borderRadius: "0px 0px 8px 8px" }}></div>
+        }
+        </div>
+
+
+      
         
     </body>
     </div>

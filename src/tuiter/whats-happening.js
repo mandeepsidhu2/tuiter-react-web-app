@@ -19,7 +19,7 @@ const WhatsHappening = () => {
       setWhatsHappening("");
  }
  return (
-   <div className="row" style={{width:"80%", marginLeft:"10%"}}>
+   <div className="row" style={{width:"100%", marginLeft:"0%"}}>
      <div className="col-auto">
        <img src="/images/nasa.png" width={60}/>
      </div>
