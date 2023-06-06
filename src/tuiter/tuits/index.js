@@ -42,7 +42,7 @@ const Tuits = () => {
         <div class="content">
         <div class="cd-card-feed">
      
-      {tuits.length ?<div style={{ border: "1px solid #C8C8C9", width: "100%",height:"5px" ,borderBottom:"0px",borderRadius: "8px 8px 0 0" }}></div>:null}
+      {tuits.length ?<div style={{ border: "1px solid #C8C8C9", width: "100%",height:"10px" ,borderBottom:"0px",borderRadius: "10px 10px 0 0" }}></div>:null}
 
             {
         tuits.map((tuit, idx) => (

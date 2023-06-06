@@ -309,7 +309,7 @@ const TuitItem =  (
       
         {(idx!=len-1)?
         <div style={{ border: "1px solid #C8C8C9", height: "0px",borderTop:"0px" }}></div>:
-        <div style={{ border: "1px solid #C8C8C9", width: "100%",height:"5px" ,borderTop:"0px",borderRadius: "0px 0px 8px 8px" }}></div>
+        <div style={{ border: "1px solid #C8C8C9", width: "100%",height:"10px" ,borderTop:"0px",borderRadius: "0px 0px 10px 10px" }}></div>
         }
         </div>
 

@@ -16,7 +16,7 @@ import tuitsReducer from "./reducers/tuits-reducer";
 function Tuiter() {
  return (
   <Provider store={store}>
-   <div>
+   <div style={{width:"100%"}}>
      <Nav />
      <div className="row">
        <div className="col-xl-2 col-lg-2 col-md-3 col-sm-3 ">
