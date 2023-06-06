@@ -258,12 +258,12 @@ const TuitItem =  (
         <div>
         <div class="cd-card container">
           <div class="row" style={{width:"100%"}}>
-              <div class="col-1">
+              <div style={{width:"11%"}}>
                 <div class="cd-user-info">
                     <img class="cd-user-dp" src={tuit.image} alt="User DP"/>
                 </div>
               </div>
-              <div class="col-11">
+              <div style={{width:"89%"}}>
                 <div class="cd-card-header">
 
                     <div class="cd-user-details">
