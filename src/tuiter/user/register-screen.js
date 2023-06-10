@@ -13,7 +13,7 @@ function RegisterScreen() {
      dispatch(register({ username, password})).then((resp)=> {
          if(resp.payload!=null) return navigate("/tuiter/profile")}
          )
-     .catch(()=>console.log("Unable to login"));
+     .catch(()=>console.log("Unable to register"));
 
   } catch (e) {
     alert(e);

@@ -11,7 +11,6 @@ function LoginScreen() {
   try {
      dispatch(loginThunk({ username, password }))
      .then((resp)=> {
-         console.log(resp)
          if(resp.payload!=null) return navigate("/tuiter/profile")}
          )
      .catch(()=>console.log("Unable to login"));
