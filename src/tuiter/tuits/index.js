@@ -1,9 +1,17 @@
-import React from "react";
-import {useSelector} from "react-redux";
+import React, {useEffect}  from "react";
+import {useDispatch, useSelector} from "react-redux";
+import {findTuitsThunk} from "../services/tuits-thunks";
+
 import TuitItem from './tuit-item'
 const Tuits = () => {
-    const { tuits } = useSelector(state => state.tuits)
+  //  const { tuits } = useSelector(state => state.tuits)
+    const {tuits, loading} = useSelector(state => state.tuits)
+    const dispatch = useDispatch();
 
+    useEffect(() => {
+        dispatch(findTuitsThunk())
+      }, [])
+     
 
  return(
 
@@ -41,6 +49,12 @@ const Tuits = () => {
         <body>
         <div class="content">
         <div class="cd-card-feed">
+        { loading &&
+            <li className="list-group-item">
+                Loading...
+            </li>
+            }
+
      
       {tuits.length ?<div style={{ border: "1px solid #C8C8C9", width: "100%",height:"10px" ,borderBottom:"0px",borderRadius: "10px 10px 0 0" }}></div>:null}
 

@@ -1,8 +1,9 @@
 import React from "react";
 import {useDispatch} from "react-redux";
 import {deleteTuit,toggleLikeTuit} from "../reducers/tuits-reducer";
+import {deleteTuitThunk} from "../services/tuits-thunks";
 
-
+import { updateTuitThunk } from "../services/tuits-thunks";
 
 
 
@@ -29,12 +30,9 @@ const TuitItem =  (
    )=> {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+      dispatch(deleteTuitThunk(id));
       }
-    const toggleLikeTuitHandler = (id) =>{
-      dispatch(toggleLikeTuit(id));
-
-    }
+    
 
  return(
 
@@ -268,6 +266,7 @@ const TuitItem =  (
 
                     <div class="cd-user-details">
                     <span class="cd-username">{tuit.userName}</span>
+                    <span class="cd-date">{tuit.handle}</span>
                     <i class="fas fa-check-circle cd-verified"></i>
                     <span class="cd-date">{tuit.time}</span>
                     </div>
@@ -291,11 +290,12 @@ const TuitItem =  (
                     <span class="cd-icon-number">{tuit.retuits}</span>
                 </span>
                 <span class="cd-icon-with-number">
-                  { tuit.liked?
-                   <i class="fa-solid fa-heart" style={{color: "#dc3446"}} onClick={() => toggleLikeTuitHandler(tuit._id)}></i>:
-                    <i class="far fa-heart" onClick={() => toggleLikeTuitHandler(tuit._id)}></i>
-                  }
+                   <i class="fa-solid fa-heart" style={{color: "#dc3446"}} onClick={() =>  dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes +1}))}></i>
                   <span class="cd-icon-number">{tuit.likes}</span>
+                </span>
+                <span class="cd-icon-with-number">
+                   <i class="fa-solid fa-thumbs-down"  onClick={() =>  dispatch(updateTuitThunk({ ...tuit, dislikes: tuit.dislikes +1}))}></i>
+                  <span class="cd-icon-number">{tuit.dislikes}</span>
                 </span>
                 <span class="cd-icon-with-number">
                     <i class="far fa-share"></i>
