@@ -8,7 +8,6 @@ const authSlice = createSlice({
  reducers: {},
  extraReducers: {
    [loginThunk.fulfilled]: (state, { payload }) => {
-       console.log(payload)
      state.currentUser = payload;
    },
    [logoutThunk.fulfilled]: (state, { payload }) => {

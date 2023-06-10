@@ -10,8 +10,11 @@ function RegisterScreen() {
  const handleRegister = async () => {
   try {
       
-     dispatch(register({ username, password}));
-    navigate("/tuiter/login");
+     dispatch(register({ username, password})).then((resp)=> {
+         if(resp.payload!=null) return navigate("/tuiter/profile")}
+         )
+     .catch(()=>console.log("Unable to login"));
+
   } catch (e) {
     alert(e);
   }
