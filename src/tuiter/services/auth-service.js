@@ -29,6 +29,7 @@ export const updateUser = async (user) => {
 };
 
 export const register = async (req) => { 
+    console.log(USERS_URL)
     const response = await api.post(`${USERS_URL}/register`, req);
     return response.data;
 }
