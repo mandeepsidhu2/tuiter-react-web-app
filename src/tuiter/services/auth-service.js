@@ -2,7 +2,7 @@ import axios from "axios";
 const SERVER_API_URL = process.env.REACT_APP_API_BASE;
 //const USERS_URL = `${SERVER_API_URL}/api/users`;
 
-const USERS_URL = `https://tuiter-node-server-app-bsga.onrender.com/api/users`;
+const USERS_URL = `${SERVER_API_URL}/api/users`;
 
 const api = axios.create({ withCredentials: true });
 
@@ -29,7 +29,6 @@ export const updateUser = async (user) => {
 };
 
 export const register = async (req) => { 
-    console.log(USERS_URL)
     const response = await api.post(`${USERS_URL}/register`, req);
     return response.data;
 }
