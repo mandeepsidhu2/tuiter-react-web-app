@@ -1,10 +1,6 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {deleteTuit,toggleLikeTuit} from "../reducers/tuits-reducer";
-import {deleteTuitThunk} from "../services/tuits-thunks";
-
-import { updateTuitThunk } from "../services/tuits-thunks";
-
+import {deleteTuitThunk,updateTuitThunk} from "../services/tuits-thunks";
 
 
 const TuitItem =  (
@@ -32,6 +28,22 @@ const TuitItem =  (
     const deleteTuitHandler = (id) => {
       dispatch(deleteTuitThunk(id));
       }
+      const toggleLikeTuitHandler = () =>{
+        if(tuit.liked)
+          dispatch(updateTuitThunk({...tuit,likes:tuit.likes-1,liked:false}));
+        else
+        dispatch(updateTuitThunk({...tuit,likes:tuit.likes+1,liked:true}));
+
+      }
+
+      const toggleDislikeTuitHandler = () =>{
+        if(tuit.disliked)
+          dispatch(updateTuitThunk({...tuit,dislikes:tuit.dislikes-1,disliked:false}));
+        else
+        dispatch(updateTuitThunk({...tuit,dislikes:tuit.dislikes+1,disliked:true}));
+
+      }
+  
     
 
  return(
@@ -259,6 +271,7 @@ const TuitItem =  (
               <div style={{width:"11%"}}>
                 <div class="cd-user-info">
                     <img class="cd-user-dp" src={tuit.image} alt="User DP"/>
+                    
                 </div>
               </div>
               <div style={{width:"89%"}}>
@@ -290,11 +303,17 @@ const TuitItem =  (
                     <span class="cd-icon-number">{tuit.retuits}</span>
                 </span>
                 <span class="cd-icon-with-number">
-                   <i class="fa-solid fa-heart" style={{color: "#dc3446"}} onClick={() =>  dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes +1}))}></i>
+                { tuit.liked?
+                   <i class="fa-solid fa-heart" style={{color: "#dc3446"}} onClick={() => toggleLikeTuitHandler()}></i>:
+                    <i class="far fa-heart" onClick={() => toggleLikeTuitHandler()}></i>
+                  }
                   <span class="cd-icon-number">{tuit.likes}</span>
                 </span>
                 <span class="cd-icon-with-number">
-                   <i class="fa-solid fa-thumbs-down"  onClick={() =>  dispatch(updateTuitThunk({ ...tuit, dislikes: tuit.dislikes +1}))}></i>
+                { tuit.disliked?
+                   <i class="fa-solid fa-thumbs-down"  onClick={() => toggleDislikeTuitHandler()}></i>:
+                    <i class="fa-sharp fa-light fa-thumbs-down" onClick={() => toggleDislikeTuitHandler()}></i>
+                  }
                   <span class="cd-icon-number">{tuit.dislikes}</span>
                 </span>
                 <span class="cd-icon-with-number">

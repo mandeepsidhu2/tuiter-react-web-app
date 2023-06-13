@@ -9,21 +9,10 @@ function ProfileScreen() {
  const dispatch = useDispatch();
  const navigate = useNavigate();
  const save = () => {
-     console.log(profile)
       dispatch(updateUserThunk(profile));
      };
  useEffect(  () => {
-    console.log(profile)
-    //  const fetchData= async() => {
             dispatch(profileThunk())
-
-         // setProfile({...resp,...profile})
-          
-    //   }
-    //   fetchData();
-
-   
-   //setProfile(payload);
  }, []);
  return (
     <div>
@@ -36,9 +25,7 @@ function ProfileScreen() {
           const newProfile = {
            ...profile, firstName: event.target.value,
           };
-          console.log(profile)
           setProfile(newProfile);
-          console.log(profile)
          }}/>
        </div>
        <div>
