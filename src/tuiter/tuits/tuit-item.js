@@ -26,7 +26,7 @@ const TuitItem =  (
    )=> {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-      dispatch(deleteTuitThunk(id));
+        dispatch(deleteTuitThunk(id));
       }
       const toggleLikeTuitHandler = () =>{
         if(tuit.liked)
